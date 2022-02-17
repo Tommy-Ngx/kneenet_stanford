@@ -1,1 +1,666 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>kneenet</title><link href=/css/app.c2e94d17.css rel=preload as=style><link href=/css/chunk-vendors.a413d28d.css rel=preload as=style><link href=/js/app.f49e9a75.js rel=preload as=script><link href=/js/chunk-vendors.3d4c3ca1.js rel=preload as=script><link href=/css/chunk-vendors.a413d28d.css rel=stylesheet><link href=/css/app.c2e94d17.css rel=stylesheet></head><body><noscript><strong>We're sorry but kneenet doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.3d4c3ca1.js></script><script src=/js/app.f49e9a75.js></script></body></html>
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+        overflow: visible;
+    }
+
+    .svg-inline--fa {
+        display: inline-block;
+        font-size: inherit;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -0.125em;
+    }
+
+    .svg-inline--fa.fa-lg {
+        vertical-align: -0.225em;
+    }
+
+    .svg-inline--fa.fa-w-1 {
+        width: 0.0625em;
+    }
+
+    .svg-inline--fa.fa-w-2 {
+        width: 0.125em;
+    }
+
+    .svg-inline--fa.fa-w-3 {
+        width: 0.1875em;
+    }
+
+    .svg-inline--fa.fa-w-4 {
+        width: 0.25em;
+    }
+
+    .svg-inline--fa.fa-w-5 {
+        width: 0.3125em;
+    }
+
+    .svg-inline--fa.fa-w-6 {
+        width: 0.375em;
+    }
+
+    .svg-inline--fa.fa-w-7 {
+        width: 0.4375em;
+    }
+
+    .svg-inline--fa.fa-w-8 {
+        width: 0.5em;
+    }
+
+    .svg-inline--fa.fa-w-9 {
+        width: 0.5625em;
+    }
+
+    .svg-inline--fa.fa-w-10 {
+        width: 0.625em;
+    }
+
+    .svg-inline--fa.fa-w-11 {
+        width: 0.6875em;
+    }
+
+    .svg-inline--fa.fa-w-12 {
+        width: 0.75em;
+    }
+
+    .svg-inline--fa.fa-w-13 {
+        width: 0.8125em;
+    }
+
+    .svg-inline--fa.fa-w-14 {
+        width: 0.875em;
+    }
+
+    .svg-inline--fa.fa-w-15 {
+        width: 0.9375em;
+    }
+
+    .svg-inline--fa.fa-w-16 {
+        width: 1em;
+    }
+
+    .svg-inline--fa.fa-w-17 {
+        width: 1.0625em;
+    }
+
+    .svg-inline--fa.fa-w-18 {
+        width: 1.125em;
+    }
+
+    .svg-inline--fa.fa-w-19 {
+        width: 1.1875em;
+    }
+
+    .svg-inline--fa.fa-w-20 {
+        width: 1.25em;
+    }
+
+    .svg-inline--fa.fa-pull-left {
+        margin-right: 0.3em;
+        width: auto;
+    }
+
+    .svg-inline--fa.fa-pull-right {
+        margin-left: 0.3em;
+        width: auto;
+    }
+
+    .svg-inline--fa.fa-border {
+        height: 1.5em;
+    }
+
+    .svg-inline--fa.fa-li {
+        width: 2em;
+    }
+
+    .svg-inline--fa.fa-fw {
+        width: 1.25em;
+    }
+
+    .fa-layers svg.svg-inline--fa {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .fa-layers {
+        display: inline-block;
+        height: 1em;
+        position: relative;
+        text-align: center;
+        vertical-align: -0.125em;
+        width: 1em;
+    }
+
+    .fa-layers svg.svg-inline--fa {
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+    }
+
+    .fa-layers-counter, .fa-layers-text {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+    }
+
+    .fa-layers-text {
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+    }
+
+    .fa-layers-counter {
+        background-color: #ff253a;
+        border-radius: 1em;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #fff;
+        height: 1.5em;
+        line-height: 1;
+        max-width: 5em;
+        min-width: 1.5em;
+        overflow: hidden;
+        padding: 0.25em;
+        right: 0;
+        text-overflow: ellipsis;
+        top: 0;
+        -webkit-transform: scale(0.25);
+        transform: scale(0.25);
+        -webkit-transform-origin: top right;
+        transform-origin: top right;
+    }
+
+    .fa-layers-bottom-right {
+        bottom: 0;
+        right: 0;
+        top: auto;
+        -webkit-transform: scale(0.25);
+        transform: scale(0.25);
+        -webkit-transform-origin: bottom right;
+        transform-origin: bottom right;
+    }
+
+    .fa-layers-bottom-left {
+        bottom: 0;
+        left: 0;
+        right: auto;
+        top: auto;
+        -webkit-transform: scale(0.25);
+        transform: scale(0.25);
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left;
+    }
+
+    .fa-layers-top-right {
+        right: 0;
+        top: 0;
+        -webkit-transform: scale(0.25);
+        transform: scale(0.25);
+        -webkit-transform-origin: top right;
+        transform-origin: top right;
+    }
+
+    .fa-layers-top-left {
+        left: 0;
+        right: auto;
+        top: 0;
+        -webkit-transform: scale(0.25);
+        transform: scale(0.25);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+    }
+
+    .fa-lg {
+        font-size: 1.3333333333em;
+        line-height: 0.75em;
+        vertical-align: -0.0667em;
+    }
+
+    .fa-xs {
+        font-size: 0.75em;
+    }
+
+    .fa-sm {
+        font-size: 0.875em;
+    }
+
+    .fa-1x {
+        font-size: 1em;
+    }
+
+    .fa-2x {
+        font-size: 2em;
+    }
+
+    .fa-3x {
+        font-size: 3em;
+    }
+
+    .fa-4x {
+        font-size: 4em;
+    }
+
+    .fa-5x {
+        font-size: 5em;
+    }
+
+    .fa-6x {
+        font-size: 6em;
+    }
+
+    .fa-7x {
+        font-size: 7em;
+    }
+
+    .fa-8x {
+        font-size: 8em;
+    }
+
+    .fa-9x {
+        font-size: 9em;
+    }
+
+    .fa-10x {
+        font-size: 10em;
+    }
+
+    .fa-fw {
+        text-align: center;
+        width: 1.25em;
+    }
+
+    .fa-ul {
+        list-style-type: none;
+        margin-left: 2.5em;
+        padding-left: 0;
+    }
+
+    .fa-ul > li {
+        position: relative;
+    }
+
+    .fa-li {
+        left: -2em;
+        position: absolute;
+        text-align: center;
+        width: 2em;
+        line-height: inherit;
+    }
+
+    .fa-border {
+        border: solid 0.08em #eee;
+        border-radius: 0.1em;
+        padding: 0.2em 0.25em 0.15em;
+    }
+
+    .fa-pull-left {
+        float: left;
+    }
+
+    .fa-pull-right {
+        float: right;
+    }
+
+    .fa.fa-pull-left, .fas.fa-pull-left, .far.fa-pull-left, .fal.fa-pull-left, .fab.fa-pull-left {
+        margin-right: 0.3em;
+    }
+
+    .fa.fa-pull-right, .fas.fa-pull-right, .far.fa-pull-right, .fal.fa-pull-right, .fab.fa-pull-right {
+        margin-left: 0.3em;
+    }
+
+    .fa-spin {
+        -webkit-animation: fa-spin 2s infinite linear;
+        animation: fa-spin 2s infinite linear;
+    }
+
+    .fa-pulse {
+        -webkit-animation: fa-spin 1s infinite steps(8);
+        animation: fa-spin 1s infinite steps(8);
+    }
+
+    @-webkit-keyframes fa-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes fa-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    .fa-rotate-90 {
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .fa-rotate-180 {
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .fa-rotate-270 {
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+
+    .fa-flip-horizontal {
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+        -webkit-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+
+    .fa-flip-vertical {
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+        -webkit-transform: scale(1, -1);
+        transform: scale(1, -1);
+    }
+
+    .fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+        -webkit-transform: scale(-1, -1);
+        transform: scale(-1, -1);
+    }
+
+    :root .fa-rotate-90, :root .fa-rotate-180, :root .fa-rotate-270, :root .fa-flip-horizontal, :root .fa-flip-vertical, :root .fa-flip-both {
+        -webkit-filter: none;
+        filter: none;
+    }
+
+    .fa-stack {
+        display: inline-block;
+        height: 2em;
+        position: relative;
+        width: 2.5em;
+    }
+
+    .fa-stack-1x, .fa-stack-2x {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+        height: 1em;
+        width: 1.25em;
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+        height: 2em;
+        width: 2.5em;
+    }
+
+    .fa-inverse {
+        color: #fff;
+    }
+
+    .sr-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .sr-only-focusable:active, .sr-only-focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+    </style>
+    <link rel="icon" href="/favicon.ico">
+    <title>KneeNet - software to streamline knee osteoarthritis R&amp;D</title>
+    <link href="css/app.c2e94d17.css" rel="preload" as="style">
+    <link href="css/chunk-vendors.a413d28d.css" rel="preload" as="style">
+    <link href="js/app.f49e9a75.js" rel="preload" as="script">
+    <link href="js/chunk-vendors.3d4c3ca1.js" rel="preload" as="script">
+    <link href="css/chunk-vendors.a413d28d.css" rel="stylesheet">
+    <link href="css/app.c2e94d17.css" rel="stylesheet">-->
+    <link href="https://www.google-analytics.com" rel="preconnect">
+    <script async="" src="https://www.google-analytics.com/analytics_debug.js" charset="utf-8"></script>
+</head>
+<body>
+    <noscript>&lt;strong&gt;We're sorry but kneenet doesn't work properly without JavaScript enabled. Please enable it to continue.&lt;/strong&gt;</noscript>
+    <div id="app">
+        <div>
+            <!---->
+            <section id="demo" class="header-image py-4">
+                <div class="text-light my-5 container">
+                    <div class="row justify-content-center">
+                        <div class="mb-2 text-center col-md-8 col-12">
+                            <div class="section-header has-bottom-sep">
+                                <h2>Our X-ray tool automatically evaluates knee osteoarthritis severity in X-rays using the Kellgren-Lawrence scoring system.</h2>
+                            </div>
+                            <div style="margin: 0.5em;">
+                                <a href="#license">Before using our software read and accept our license agreement.</a>
+                            </div>
+                            <h4>Try it out! Pick an image to analyze</h4>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="mx-sm-3 mb-2 col-sm-10 col-md-8 col-lg-6 col-12">
+                            <div class="custom-file b-form-file is-valid" id="__BVID__7__BV_file_outer_">
+                                <input type="file" accept=".jpg, .jpeg, .png, .dcm" multiple="multiple" class="custom-file-input is-valid" id="__BVID__7">
+                                <label class="custom-file-label" for="__BVID__7">Choose or drag-and-drop a file...</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="text-center col" style="font-weight: bold;">
+                                  The analysis is run on your computer - no images are sent out!
+                                </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="text-center col">
+                            It can take up to 30 seconds to process an image depending on your computer configuration.
+                                </div>
+                    </div>
+                </div>
+                <sectionline bottom=""></sectionline>
+            </section>
+            <section class="s-services">
+                <h1 class="h1-responsive font-weight-bold text-center mb-4 mt-0">Automatic annotations from our model</h1>
+                <div class="ml-md-5 mr-md-5 text-container">
+                    <div class="mr-md-3 text-col">
+                        <table aria-busy="false" aria-colcount="3" class="table b-table results table-hover" id="__BVID__9">
+                            <!---->
+                            <!---->
+                            <thead class="">
+                                <tr>
+                                    <th tabindex="0" scope="col" aria-colindex="1" aria-label="Click to sort Descending" aria-sort="none" class="">Filename</th>
+                                    <th scope="col" aria-colindex="2" class="text-center">KL Score</th>
+                                    <th scope="col" aria-colindex="3" class="text-center">Confidence</th>
+                                </tr>
+                            </thead>
+                            <!---->
+                            <tbody class="">
+                                <!---->
+                                <tr tabindex="0" class="">
+                                    <td aria-colindex="1" class="">
+                                        <span class="">true_label_2.png</span>
+                                    </td>
+                                    <td aria-colindex="2" class="text-center">
+                                        <span class="" style="text-align: center;">
+                                                    2 
+                                                  </span>
+                                    </td>
+                                    <td aria-colindex="3" class="text-center">
+                                        <span class="">
+                                                    55.56%
+                                                  </span>
+                                    </td>
+                                </tr>
+                                <tr tabindex="0" class="">
+                                    <td aria-colindex="1" class="">
+                                        <span class="text-selected">true_label_4.png</span>
+                                    </td>
+                                    <td aria-colindex="2" class="text-center">
+                                        <span class="text-selected" style="text-align: center;">
+                                                    4 
+                                                  </span>
+                                    </td>
+                                    <td aria-colindex="3" class="text-center">
+                                        <span class="text-selected">
+                                                    78.99%
+                                                  </span>
+                                    </td>
+                                </tr>
+                                <!---->
+                                <!---->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="image-col">
+                        <img id="selectedImage" src="img/true_label_4.74f372b7.jpg" width="299" height="299" alt="Knee cap">
+                        <div class="mt-2 text-center">
+                            <!---->
+                            <strong style="font-size: 2em;">4</strong>
+                            <br>
+                            <span>(confidence = 78.99%)</span>
+                        </div>
+                    </div>
+                </div>
+                <sectionline color="#39b54a" top=""></sectionline>
+            </section>
+            <div class="py-2 mb-2 mt-2 text-center container-fluid" style="background-color: rgb(250, 250, 250); border-top-width: 1px; border-top-style: solid; border-top-color: rgb(224, 224, 224); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(224, 224, 224);">
+                <strong>Neural network status: </strong>
+                <span>Ready! You can upload images now</span>
+            </div>
+            <div class="container">
+                <h1 class=" h1-responsive font-weight-bold text-center my-4" style="padding: 0.5em;">Team</h1>
+                <div class="row m-t-2 justify-content-center">
+                    <div class="col-md-4 person text-center">
+                        <img src="img/Kevin_Thomas.90358889.jpg">
+                        <br>
+                        <div class="name">Kevin Thomas</div>
+                        <div class="role">
+                            M.D. Ph.D. Candidate @ Stanford &nbsp; 
+                            <a href="https://www.linkedin.com/in/kevin-a-thomas-04b91a45/">
+                                <svg class="svg-inline--fa fa-linkedin fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                                </svg>
+                                <!-- <i class="fab fa-linkedin"></i> -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 person text-center">
+                        <img src="img/Lukasz_Kidzinski.e1f3aa21.jpg">
+                        <br>
+                        <div class="name">Lukasz Kidzinski, Ph.D.</div>
+                        <div class="role">
+                            Bioengineering Researcher @ Stanford &nbsp; 
+                            <a href="https://www.linkedin.com/in/lukaszkidzinski/">
+                                <svg class="svg-inline--fa fa-linkedin fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                                </svg>
+                                <!-- <i class="fab fa-linkedin"></i> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h1 class=" h1-responsive font-weight-bold text-center my-4" style="padding: 0.5em;">Advisors</h1>
+                <div class="row mt-4 mb-5 justify-content-center">
+                    <div class="col-md-4 person text-center">
+                        <img src="img/Garry_Gold.5745d14e.jpg">
+                        <br>
+                        <div class="name">Garry Gold, M.D.</div>
+                        <div class="role">
+                            Professor of Radiology &nbsp; 
+                            <a href="https://www.linkedin.com/in/garry-gold-9a242a3/">
+                                <svg class="svg-inline--fa fa-linkedin fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                                </svg>
+                                <!-- <i class="fab fa-linkedin"></i> -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 person text-center">
+                        <img src="img/Scott_Delp.8a991b86.jpg">
+                        <div class="name">Scott Delp, Ph.D.</div>
+                        <div class="role">
+                            Professor of Bioengineering @ Stanford &nbsp; 
+                            <a href="https://www.linkedin.com/in/scott-delp-569651ab/">
+                                <svg class="svg-inline--fa fa-linkedin fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                                </svg>
+                                <!-- <i class="fab fa-linkedin"></i> -->
+                            </a>
+                        </div>
+                        <div class="blurb"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="poc" class="p-t-4 p-b-4 section-bg-dark">
+                <div class="container">
+                    <div class="text-center">
+                        <h1 id="license" class="font-weight-bold text-center my-4">License agreement</h1>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="row col-md-12">
+                            <ol>
+                                <li> The Board of Trustees of the Leland Stanford Junior University ("Stanford") provides KneeNet software and code ("Service") free of charge for non-commercial use only. Use of the Service by any commercial entity for any purpose, including research, is prohibited.</li>
+                                <li> By using the Service, you agree to be bound by the terms of this Agreement. Please read it carefully.</li>
+                                <li> You agree not to use the Service for commercial advantage, or in the course of for-profit activities. You agree not to use the Service on behalf of any organization that is not a non-profit organization. Commercial entities wishing to use this Service should contact Stanford University's Office of Technology Licensing.</li>
+                                <li> THE SERVICE IS OFFERED "AS IS", AND, TO THE EXTENT PERMITTED BY LAW, STANFORD MAKES NO REPRESENTATIONS AND EXTENDS NO WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. STANFORD SHALL NOT BE LIABLE FOR ANY CLAIMS OR DAMAGES WITH RESPECT TO ANY LOSS OR OTHER CLAIM BY YOU OR ANY THIRD PARTY ON ACCOUNT OF, OR ARISING FROM THE USE OF THE SERVICE. YOU HEREBY AGREE TO DEFEND AND INDEMNIFY STANFORD, ITS TRUSTEES, EMPLOYEES, OFFICERS, STUDENTS, AGENTS, FACULTY, REPRESENTATIVES, AND VOLUNTEERS ("STANFORD INDEMNITEES") FROM ANY LOSS OR CLAIM ASSERTED AGAINST STANFORD INDEMNITEES ARISING FROM YOUR USE OF THE SERVICE.</li>
+                                <li> All rights not expressly granted to you in this Agreement are reserved and retained by Stanford or its licensors or content providers. This Agreement provides no license under any patent.</li>
+                                <li> You agree that this Agreement and any dispute arising under it is governed by the laws of the State of California, United States of America, applicable to agreements negotiated, executed, and performed within California.</li>
+                                <li> Subject to your compliance with the terms and conditions set forth in this Agreement, Stanford grants you a revocable, non-exclusive, non-transferable right to access and make use of the Service.</li>
+                                <li>Any questions regarding our technology direct to lukasz.kidzinski@stanford.edu.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="pre-footer"></div>
+            <footer>
+                <div class="container">
+                    <p class="text-center">Copyright (c) 2019</p>
+                </div>
+            </footer>
+        </div>
+        <div class="main"></div>
+    </div>
+    <script src="js/chunk-vendors.3d4c3ca1.js"></script>
+    <script src="js/app.f49e9a75.js"></script>-->
+</body>
+</html>
+
